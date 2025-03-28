@@ -13,6 +13,19 @@ class States(StatesGroup):
     PURCHASE_CHATGPT_STATE = State()
     PURCHASE_DALL_E_STATE = State()
     PURCHASE_STABLE_STATE = State()
+    # Новые состояния для MidJourney
+    MIDJOURNEY_STATE = State()
+    PURCHASE_MIDJOURNEY_STATE = State()
+    # Состояния для подписок
+    SUBSCRIPTION_STATE = State()
+    # Состояния для админ-панели
+    ADMIN_STATE = State()
+    ADMIN_ADD_BALANCE_STATE = State()
+    ADMIN_ADD_ADMIN_STATE = State()
+    # Состояния для реферальной системы
+    REFERRAL_STATE = State()
+    # Состояния для Telegram Stars
+    TELEGRAM_STARS_MENU_STATE = State()
 
 encoding = encoding_for_model("gpt-4o")
 
